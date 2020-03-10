@@ -10,7 +10,7 @@ const LINE_HEADER = {
 const LINE_USER_ID = `${functions.config().line.userid}`;
 
 const OWM_API = "https://api.openweathermap.org/data/2.5/weather/";
-const OWM_API_KEY = `${functions.config().owm.key}`;
+const OWM_API_KEY = `${functions.config().owm.apikey}`;
 
 exports.LineBot = functions.https.onRequest((req, res) => {
   if (
